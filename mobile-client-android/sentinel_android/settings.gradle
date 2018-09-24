@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':plugin', ':socks5-core'
