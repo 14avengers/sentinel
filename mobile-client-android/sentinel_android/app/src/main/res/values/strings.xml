@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name" translatable="false">Sentinel</string>
-    <string name="default_language" translatable="false">en</string>
-    <string name="app_version" translatable="false">v %s</string>
+    <string name="app_name">Sentinel</string>
+    <string name="default_language">en</string>
+    <string name="app_version">v %s</string>
 
     <string-array name="spinner_list">
         <item>SENT</item>
@@ -121,9 +121,9 @@
     <string name="deprecated_tls_remote">Config uses option tls-remote that was deprecated in 2.3 and finally removed in 2.4</string>
     <string name="ipv4_format_error">Error parsing the IPv4 address</string>
     <string name="shortcut_profile_notfound">Profile specified in shortcut not found</string>
-    <string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
-    <string name="state_user_vpn_password" translatable="false">Waiting for user VPN password</string>
-    <string name="state_user_vpn_permission_cancelled" translatable="false">VPN API permission dialog cancelled.\n\nPlease grant this permission to use VPN services</string>
+    <string name="state_user_vpn_permission">Waiting for user permission to use VPN API</string>
+    <string name="state_user_vpn_password">Waiting for user VPN password</string>
+    <string name="state_user_vpn_permission_cancelled">VPN API permission dialog cancelled.\n\nPlease grant this permission to use VPN services</string>
     <string name="always_on_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
     <string name="config_error_found">Error in Configuration</string>
     <string name="no_vpn_support_image">Your image does not support the VPNService API.</string>
@@ -367,4 +367,6 @@
     <string name="error_select_rating">Please select rating</string>
     <string name="action_skip">Skip</string>
     <string name="action_rate">Rate</string>
+    <string name="node_version">Version:</string>
+    <string name="ok">OK</string>
 </resources>

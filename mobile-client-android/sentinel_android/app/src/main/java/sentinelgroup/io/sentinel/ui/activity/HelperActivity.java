@@ -1,14 +1,16 @@
 package sentinelgroup.io.sentinel.ui.activity;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
+import androidx.viewpager.widget.ViewPager;
 import sentinelgroup.io.sentinel.R;
 import sentinelgroup.io.sentinel.ui.adapter.VpnHelperPagerAdapter;
 import sentinelgroup.io.sentinel.ui.custom.FadePageTransformer;

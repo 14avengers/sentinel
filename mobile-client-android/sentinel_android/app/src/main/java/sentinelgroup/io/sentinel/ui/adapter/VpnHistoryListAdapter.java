@@ -1,9 +1,6 @@
 package sentinelgroup.io.sentinel.ui.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.util.DiffUtil;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +9,9 @@ import android.widget.TextView;
 import java.util.Collections;
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.RecyclerView;
 import sentinelgroup.io.sentinel.R;
 import sentinelgroup.io.sentinel.network.model.Session;
 import sentinelgroup.io.sentinel.util.Converter;

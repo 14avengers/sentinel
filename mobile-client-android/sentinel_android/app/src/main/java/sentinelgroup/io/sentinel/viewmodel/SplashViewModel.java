@@ -1,6 +1,6 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 import sentinelgroup.io.sentinel.network.model.GenericResponse;
 import sentinelgroup.io.sentinel.network.model.VersionInfo;

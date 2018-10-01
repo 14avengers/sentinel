@@ -5,7 +5,6 @@
 package de.blinkt.openvpn.core;
 
 import android.os.Build;
-import android.support.annotation.NonNull;
 
 import junit.framework.Assert;
 
@@ -17,6 +16,7 @@ import java.util.PriorityQueue;
 import java.util.TreeSet;
 import java.util.Vector;
 
+import androidx.annotation.NonNull;
 import sentinelgroup.io.sentinel.BuildConfig;
 
 public class NetworkSpace {

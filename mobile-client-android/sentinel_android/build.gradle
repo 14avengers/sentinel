@@ -4,14 +4,14 @@ buildscript {
     ext {
         kotlinVersion = '1.2.71'
         compileSdkVersion = 28
-        buildToolsVersion = '28.0.2'
+        buildToolsVersion = '28.0.3'
         minSdkVersion = 16
         sdkVersion = 28
         supportLibVersion = '28.0.0'
         androidxVersion = '1.0.0'
         androidxRoomVersion = '2.0.0-rc01'
         workVersion = '1.0.0-alpha09'
-        preferencexVersion = '1.0.0-alpha2'
+        preferencexVersion = '1.0.0'
         junitVersion = '4.12'
         androidTestVersion = '1.1.0-alpha4'
         androidEspressoVersion = '3.1.0-alpha4'

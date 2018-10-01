@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         app:met_textColorHint="@color/colorTextGray"
         app:met_underlineColor="@color/colorControlNormal" />
 
-    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.core.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/sr_reload"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -78,5 +78,5 @@
                 android:padding="@dimen/margin_16"
                 android:text="@string/tx_history_empty_list_message" />
         </RelativeLayout>
-    </android.support.v4.widget.SwipeRefreshLayout>
-</android.support.constraint.ConstraintLayout>
+    </androidx.core.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.ConstraintLayout>

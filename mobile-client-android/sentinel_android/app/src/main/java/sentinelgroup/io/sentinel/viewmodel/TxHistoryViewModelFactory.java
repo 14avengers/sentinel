@@ -1,11 +1,10 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
+import androidx.annotation.NonNull;
 import sentinelgroup.io.sentinel.repository.TxHistoryRepository;
-import sentinelgroup.io.sentinel.util.AppExecutors;
 
 public class TxHistoryViewModelFactory extends ViewModelProvider.NewInstanceFactory {
     private final TxHistoryRepository mRepository;

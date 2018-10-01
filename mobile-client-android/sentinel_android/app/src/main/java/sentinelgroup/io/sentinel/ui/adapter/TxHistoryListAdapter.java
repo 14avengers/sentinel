@@ -1,9 +1,6 @@
 package sentinelgroup.io.sentinel.ui.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,9 @@ import android.widget.TextView;
 import java.util.Collections;
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
 import sentinelgroup.io.sentinel.R;
 import sentinelgroup.io.sentinel.network.model.TxResult;
 import sentinelgroup.io.sentinel.util.AppConstants;

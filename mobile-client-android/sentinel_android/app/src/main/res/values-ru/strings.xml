@@ -341,4 +341,8 @@
     <string name="pkcs12_file_encryption_key">Ключ шифрования файлов PKCS12</string>
     <string name="private_key_password">Пароль приватного ключа</string>
     <string name="error_rsa_sign">Ошибка при входе с ключом Android хранилища %1$s: %2$s</string>
+    <string name="app_version" translatable="false">v %s</string>
+    <string name="default_language">en</string>
+    <string name="app_name">Sentinel</string>
+    <string name="vpn_enc_method">Encryption %s</string>
 </resources>

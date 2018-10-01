@@ -1,10 +1,11 @@
 package sentinelgroup.io.sentinel.network.model;
 
-import android.arch.persistence.room.Embedded;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Index;
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
+
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "referral_info_entity", indices = {@Index(value = {"address"}, unique = true)})
 public class ReferralInfoEntity {

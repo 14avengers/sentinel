@@ -1,7 +1,7 @@
 package sentinelgroup.io.sentinel.repository;
 
-import sentinelgroup.io.sentinel.network.model.PinEntity;
 import sentinelgroup.io.sentinel.db.dao.PinEntryDao;
+import sentinelgroup.io.sentinel.network.model.PinEntity;
 import sentinelgroup.io.sentinel.util.AppExecutors;
 import sentinelgroup.io.sentinel.util.Resource;
 import sentinelgroup.io.sentinel.util.SingleLiveEvent;

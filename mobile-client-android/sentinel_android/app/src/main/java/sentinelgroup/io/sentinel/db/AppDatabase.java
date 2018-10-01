@@ -1,14 +1,14 @@
 package sentinelgroup.io.sentinel.db;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
-import android.arch.persistence.room.migration.Migration;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+import androidx.room.migration.Migration;
+import androidx.sqlite.db.SupportSQLiteDatabase;
 import sentinelgroup.io.sentinel.db.dao.BalanceEntryDao;
 import sentinelgroup.io.sentinel.db.dao.BonusInfoDao;
 import sentinelgroup.io.sentinel.db.dao.DeleteTableDao;
@@ -20,11 +20,8 @@ import sentinelgroup.io.sentinel.network.model.BonusInfoEntity;
 import sentinelgroup.io.sentinel.network.model.Chains;
 import sentinelgroup.io.sentinel.network.model.GasEstimateEntity;
 import sentinelgroup.io.sentinel.network.model.PinEntity;
-import sentinelgroup.io.sentinel.network.model.ReferralInfoEntity;
 import sentinelgroup.io.sentinel.network.model.VpnListEntity;
 import sentinelgroup.io.sentinel.network.model.VpnUsageEntity;
-import sentinelgroup.io.sentinel.util.AppConstants;
-import sentinelgroup.io.sentinel.util.AppPreferences;
 
 /**
  * Room Database for storing all the essential application data in it's table defined by the various DAO's.

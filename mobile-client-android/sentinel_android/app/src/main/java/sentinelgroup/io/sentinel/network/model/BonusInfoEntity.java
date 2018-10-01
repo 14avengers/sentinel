@@ -1,10 +1,11 @@
 package sentinelgroup.io.sentinel.network.model;
 
-import android.arch.persistence.room.Embedded;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Index;
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
+
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "bonus_info_entity", indices = {@Index(value = {"deviceId"}, unique = true)})
 public class BonusInfoEntity {

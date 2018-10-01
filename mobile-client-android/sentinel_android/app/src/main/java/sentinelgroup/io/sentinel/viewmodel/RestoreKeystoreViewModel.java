@@ -1,7 +1,7 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 import android.os.Environment;
 
 import org.web3j.crypto.CipherException;

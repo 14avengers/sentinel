@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
 
-public class TxResult implements Serializable{
+public class TxResult implements Serializable {
     public String from;
     public String to;
     public List<String> topics;

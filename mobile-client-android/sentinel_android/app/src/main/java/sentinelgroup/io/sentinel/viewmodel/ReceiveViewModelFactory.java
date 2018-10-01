@@ -1,10 +1,9 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
-import sentinelgroup.io.sentinel.repository.PinRepository;
+import androidx.annotation.NonNull;
 import sentinelgroup.io.sentinel.util.AppExecutors;
 
 public class ReceiveViewModelFactory extends ViewModelProvider.NewInstanceFactory {

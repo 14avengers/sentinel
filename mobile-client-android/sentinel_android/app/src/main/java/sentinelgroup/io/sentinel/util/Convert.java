@@ -1,7 +1,6 @@
 package sentinelgroup.io.sentinel.util;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 
 /**
  * Conversion functions - Ether & Network Data Rates

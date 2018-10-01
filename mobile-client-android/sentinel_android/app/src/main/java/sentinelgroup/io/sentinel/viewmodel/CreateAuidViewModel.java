@@ -1,6 +1,6 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 import android.os.Environment;
 
 import java.io.File;

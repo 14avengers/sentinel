@@ -1,7 +1,5 @@
 package sentinelgroup.io.sentinel.util;
 
-import android.content.res.Resources;
-
 import java.io.IOException;
 
 import sentinelgroup.io.sentinel.R;

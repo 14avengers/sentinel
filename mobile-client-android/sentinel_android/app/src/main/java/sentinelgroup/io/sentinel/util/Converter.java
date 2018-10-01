@@ -1,7 +1,5 @@
 package sentinelgroup.io.sentinel.util;
 
-import android.support.annotation.NonNull;
-
 import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.text.ParseException;
@@ -10,6 +8,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+
+import androidx.annotation.NonNull;
 
 public class Converter {
     /**

@@ -4,7 +4,6 @@
  */
 package de.blinkt.openvpn.core;
 
-import android.support.v4.util.Pair;
 import android.text.TextUtils;
 
 import java.io.BufferedReader;
@@ -16,6 +15,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Vector;
 
+import androidx.core.util.Pair;
 import de.blinkt.openvpn.VpnProfile;
 
 //! Openvpn Config FIle Parser, probably not 100% accurate but close enough

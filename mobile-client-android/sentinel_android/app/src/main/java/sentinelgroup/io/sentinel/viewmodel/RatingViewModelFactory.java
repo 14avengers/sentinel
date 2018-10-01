@@ -1,9 +1,9 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
+import androidx.annotation.NonNull;
 import sentinelgroup.io.sentinel.repository.VpnRepository;
 
 public class RatingViewModelFactory extends ViewModelProvider.NewInstanceFactory {

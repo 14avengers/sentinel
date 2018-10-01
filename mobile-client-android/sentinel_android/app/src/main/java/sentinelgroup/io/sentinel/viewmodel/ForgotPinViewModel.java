@@ -1,6 +1,6 @@
 package sentinelgroup.io.sentinel.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 import org.web3j.crypto.CipherException;
 import org.web3j.crypto.WalletUtils;

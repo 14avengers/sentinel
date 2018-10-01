@@ -1,14 +1,15 @@
 package sentinelgroup.io.sentinel.network.model;
 
-import android.arch.persistence.room.Embedded;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Index;
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+
+import androidx.annotation.NonNull;
 
 @Entity(tableName = "vpn_list_entity", indices = {@Index(value = {"accountAddress"}, unique = true)})
 public class VpnListEntity implements Serializable {

@@ -20,13 +20,13 @@
 
 package com.github.shadowsocks
 
-import android.app.Fragment
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.IBinder
 import android.os.RemoteException
+import androidx.fragment.app.Fragment
 import com.github.shadowsocks.aidl.IShadowsocksService
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback
 import com.github.shadowsocks.bg.BaseService
@@ -106,14 +106,14 @@ class ShadowsocksConnection(private val instance: Interface) : ServiceConnection
         if (connectionActive) return
         connectionActive = true
         val intent = Intent(context, BaseService.serviceClass.java).setAction(Action.SERVICE)
-        context.bindService(intent, this, Context.BIND_AUTO_CREATE)
+        context?.bindService(intent, this, Context.BIND_AUTO_CREATE)
     }
 
     fun disconnect() {
         unregisterCallback()
         instance.onServiceDisconnected()
         if (connectionActive) try {
-            context.unbindService(this)
+            context?.unbindService(this)
         } catch (_: IllegalArgumentException) { }   // ignore
         connectionActive = false
         if (instance.listenForDeath) binder?.unlinkToDeath(instance, 0)

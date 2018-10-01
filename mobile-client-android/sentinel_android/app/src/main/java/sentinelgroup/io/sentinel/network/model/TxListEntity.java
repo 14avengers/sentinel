@@ -1,17 +1,17 @@
 package sentinelgroup.io.sentinel.network.model;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.Index;
-import android.arch.persistence.room.PrimaryKey;
-import android.arch.persistence.room.TypeConverters;
-import android.support.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.List;
 
+import androidx.annotation.NonNull;
 import sentinelgroup.io.sentinel.db.typeconverters.TopicsListTypeConverter;
 
 @Entity(tableName = "tx_list_entity", indices = {@Index(value = {"hash"}, unique = true)})

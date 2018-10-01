@@ -1,8 +1,9 @@
 package sentinelgroup.io.sentinel.ui.custom;
 
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * A custom page transformer for the helper screens (Alpha + Translation)
