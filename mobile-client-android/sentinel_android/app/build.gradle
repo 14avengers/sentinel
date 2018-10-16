@@ -1,4 +1,17 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
 apply plugin: 'com.android.application'
+
+def getCurrentFlavor() {
+    String task = getGradle().getStartParameter().getTaskRequests().toString()
+    Matcher matcher = Pattern.compile("(assemble|generate)\\w*(Release|Debug)").matcher(task)
+    if (matcher.find()) return matcher.group(2).toLowerCase() else {
+        println "Warning: No match found for $task"
+        return "debug"
+    }
+}
+
 android {
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
@@ -41,10 +54,13 @@ android {
         checkReleaseBuilds false // Add this
         abortOnError false
     }
+    sourceSets.main.jniLibs.srcDirs +=
+            new File(project(':core').buildDir, "intermediates/bundles/${getCurrentFlavor()}/jni")
+    sourceSets.main.jniLibs.srcDirs += new File(project(':core').projectDir, "src/overture/bin")
 
     dependencies {
         implementation fileTree(include: ['*.jar'], dir: 'libs')
-        implementation project(':socks5-core')
+        implementation project(':core')
         // MultiDexApplication
         implementation 'androidx.multidex:multidex:2.0.0'
         // Android Support Libs
